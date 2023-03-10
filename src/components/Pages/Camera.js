@@ -3,6 +3,8 @@ import Webcam from "react-webcam";
 import eye1 from './../../assets/stuc-images/eye1.jpg';
 import eye2 from './../../assets/stuc-images/eye2.jpg';
 import eye3 from './../../assets/stuc-images/eye3.jpg';
+import { NavLink } from 'react-router-dom';
+
 
 export default function Camera() {
     const videoConstraints = {
@@ -14,7 +16,7 @@ export default function Camera() {
     return (
         <div className='bg-[#0C0C0C] h-screen w-screen'>
             <div className="flex justify-between p-8 bg-[#0C0C0C] h-[16%] border-b border-b-[#494949] items-center">
-                <h1 className="text-[#7FD9CB] font-bold text-2xl ">STUC-X</h1>
+                <h1 className="text-[#7FD9CB] font-bold text-2xl "><NavLink to='/signin'>STUC-X</NavLink></h1>
                 <div className="flex items-center">
                     <svg className="w-6 h-6 text-[#C2FCE0] mr-8 cursor-pointer" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.2501 7.5C21.2501 4.04822 18.4519 1.25 15.0001 1.25C11.5483 1.25 8.75009 4.04822 8.75009 7.5M21.2501 7.5H22.886C25.4931 7.5 26.7967 7.5 27.542 8.3327C28.2873 9.16539 28.1433 10.461 27.8554 13.0522L27.4856 16.3804C26.8979 21.6695 26.6041 24.3141 24.8243 25.907C23.0446 27.5 20.3631 27.5 15.0001 27.5C9.63709 27.5 6.95559 27.5 5.17585 25.907C3.3961 24.3141 3.10226 21.6695 2.51458 16.3804L2.14477 13.0522C1.85686 10.461 1.71291 9.16539 2.45821 8.3327C3.20351 7.5 4.50707 7.5 7.11419 7.5H8.75009M21.2501 7.5H8.75009M22.5001 12.5H7.50009" stroke="#C2FCE0" stroke-width="1.875" stroke-linecap="round"/></svg>
