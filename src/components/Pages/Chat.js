@@ -1,4 +1,4 @@
-import egba from './../../assets/egba.jpg';
+import avatar from './../../assets/avatar.jpg';
 import arami from './../../assets/stuc-images/arami.jpg';
 import jomalone from './../../assets/stuc-images/jomalone.jpg';
 import lamer from './../../assets/stuc-images/lamer.jpg';
@@ -22,7 +22,7 @@ export default function Chat() {
                         <svg className="h-3 w-3 text-[#C2FCE0]" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.00002 9.30001C8.30002 9.30001 7.60002 9.03001 7.07002 8.50001L0.55002 1.98001C0.26002 1.69001 0.26002 1.21001 0.55002 0.920015C0.84002 0.630015 1.32002 0.630015 1.61002 0.920015L8.13002 7.44001C8.61002 7.92001 9.39002 7.92001 9.87002 7.44001L16.39 0.920015C16.68 0.630015 17.16 0.630015 17.45 0.920015C17.74 1.21001 17.74 1.69001 17.45 1.98001L10.93 8.50001C10.4 9.03001 9.70002 9.30001 9.00002 9.30001Z" fill="#C2FCE0"/></svg>
                         <p className="mx-2 text-[#C2FCE0]">David</p>
-                        <img src={egba} className="rounded-full h-6 w-6"  alt="profile picture" />
+                        <img src={avatar} className="rounded-full h-6 w-6"  alt="profile picture" />
                     </div>
                 </div>
             </div>
@@ -32,7 +32,9 @@ export default function Chat() {
                         <p className='bg-[rgba(84,248,169,0.08)] ml-auto mb-6 w-80 r-0 font-light text-white p-5 rounded-t-3xl rounded-bl-3xl'>Help me suggest best skincare routine and facial therapy, i have burns and tannings on my face and skin</p>
                         <p className='bg-[#171717] w-80 mr-4 font-light text-white rounded-3xl pb-36 pt-5 pl-5'>Generating response...</p>
                     </div>
-                    <input type='text' className='border-[#494949] bg-[rgba(73,73,73,0.29)] border p-3 font-thin text-[#f5f9fc] rounded-2xl w-full self-end justify-self-end focus:outline-none' placeholder='Enter your message here' />
+                    <div className='flex'>
+                        <input type='text' className='border-[#494949] bg-[rgba(73,73,73,0.29)] border p-3 font-thin text-[#f5f9fc] rounded-2xl w-full self-end justify-self-end focus:outline-none' placeholder='Enter your message here' />
+                    </div>
                 </div>
                 <div className='m-5 font-thin'>
                     <h3 className='text-white mb-5'>Recommended products</h3>

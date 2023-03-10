@@ -13,7 +13,7 @@ export default function Signin(){
                 <div className="max-w-fit bg-[#030303] flex items-center justify-center border-[#494949] rounded-lg h-fit border px-4 py-7">
                     <div className="max-w-[90%] max-h-[80%]">
                         <h1 className="font-bold text-[#54F8A9] text-3xl text-center mb-6">STUC-X</h1>
-                        <h2 className="font-medium text-[#F5F9FC] text-xl text-center mb-4">Sign In</h2>
+                        <h2 className="font-medium text-[#F5F9FC] text-xl text-center mb-4"><NavLink to='/cam'>Sign In</NavLink></h2>
                         <form action='#' className="w-full flex flex-col items-center">
                             <input type='email' name='email' id='email' placeholder="Enter your Email Address" className="bg-inherit p-3 text-[#F5F9FC] border border-[#494949] rounded-md text-xs w-[100%] mb-4"/>
                             <input type='password' name='password' id='password' placeholder="Password" className="bg-inherit p-3 text-[#F5F9FC] border border-[#494949] rounded-md text-xs w-[100%] mb-4"/>
