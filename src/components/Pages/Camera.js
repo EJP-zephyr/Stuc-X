@@ -1,7 +1,15 @@
 import avatar from './../../assets/avatar.jpg';
+import Webcam from "react-webcam";
+import eye1 from './../../assets/stuc-images/eye1.jpg';
+import eye2 from './../../assets/stuc-images/eye2.jpg';
+import eye3 from './../../assets/stuc-images/eye3.jpg';
 
 export default function Camera() {
-    
+    const videoConstraints = {
+        width: 300,
+        height: 500,
+        facingMode: "user"
+      };
     
     return (
         <div className='bg-[#0C0C0C] h-screen w-screen'>
@@ -21,8 +29,8 @@ export default function Camera() {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-between'>
-                <div className='bg-[rgba(255,255,255,0.03)] w-[322px] m-3 rounded-lg border border-[#494949] p-5'>
+            <div className='flex w-full justify-between'>
+                <div className='bg-[rgba(255,255,255,0.03)] w-fit pr-40 m-3 rounded-lg border border-[#494949] p-5'>
                     <div className='px-2 py-3 mb-6'>
                         <button className='flex items-center'>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +39,7 @@ export default function Camera() {
 
                         </button>
                     </div>
-                    <div className='px-2 py-3 bg-[#D9D9D9]  mb-6 rounded-lg w-[80%]'>
+                    <div className='px-2 py-3 bg-[#D9D9D9]  mb-6 rounded-lg w-[100%]'>
                         <button className='flex items-center'>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4.5 2C3.11929 2 2 3.11929 2 4.5V5C2 5.55228 1.55228 6 1 6C0.447715 6 0 5.55228 0 5V4.5C0 2.01472 2.01472 0 4.5 0H5C5.55228 0 6 0.447715 6 1C6 1.55228 5.55228 2 5 2H4.5Z" fill="#1A1722"/>
@@ -78,11 +86,11 @@ export default function Camera() {
                         </button>
                     </div>
                 </div>
-                <div>
-
-                </div>
-                <div>
-                    
+                <Webcam className='mt-5'  imageSmoothing={true} videoConstraints={videoConstraints} mirrored={true} />
+                <div className='h-[80%] border border-[#494949] mr-20  mt-3 bg-[#0E0E0E] rounded-xl p-5 w-fit'>
+                    <img src={eye1} className='w-[158px] h-[158px] mb-3 rounded-3xl' />
+                    <img src={eye2} className='w-[158px] h-[158px] mb-3 rounded-3xl' />
+                    <img src={eye3} className='w-[158px] h-[158px] rounded-3xl' />
                 </div>
             </div>
         </div>
