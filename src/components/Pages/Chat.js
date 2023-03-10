@@ -1,6 +1,13 @@
 import egba from './../../assets/egba.jpg';
+import arami from './../../assets/stuc-images/arami.jpg';
+import jomalone from './../../assets/stuc-images/jomalone.jpg';
+import lamer from './../../assets/stuc-images/lamer.jpg';
+import santal from './../../assets/stuc-images/santal.jpg';
+import origins from './../../assets/stuc-images/origins.jpg';
+import smashbox from './../../assets/stuc-images/smashbox.jpg';
 
 export default function Chat() {
+
     return (
         <div className="bg-[#0C0C0C] h-screen w-screen">
             <div className="flex justify-between p-8 bg-[#0C0C0C] h-[16%] border-b border-b-[#494949] items-center">
@@ -20,12 +27,71 @@ export default function Chat() {
                 </div>
             </div>
             <section className='flex h-[84%] bg-[#0C0C0C]'>
-                <div className='bg-[rgba(73,73,73,0.29)] border border-[#494949] rounded-lg h-[90%] w-[60%] m-5 flex p-6'>
-                    <div className=''></div>
-                    <input type='text' className='border-[#494949] bg-[rgba(73,73,73,0.29)] border p-3 font-thin text-[#f5f9fc] rounded-2xl w-full self-end focus:outline-none' placeholder='Enter your message here' />
+                <div className='bg-[rgba(73,73,73,0.29)] border border-[#494949] rounded-lg h-[90%] w-[60%] m-5 flex flex-col p-6'>
+                    <div className='w-full h-full' >
+                        <p className='bg-[rgba(84,248,169,0.08)] ml-auto mb-6 w-80 r-0 font-light text-white p-5 rounded-t-3xl rounded-bl-3xl'>Help me suggest best skincare routine and facial therapy, i have burns and tannings on my face and skin</p>
+                        <p className='bg-[#171717] w-80 mr-4 font-light text-white rounded-3xl pb-36 pt-5 pl-5'>Generating response...</p>
+                    </div>
+                    <input type='text' className='border-[#494949] bg-[rgba(73,73,73,0.29)] border p-3 font-thin text-[#f5f9fc] rounded-2xl w-full self-end justify-self-end focus:outline-none' placeholder='Enter your message here' />
                 </div>
-                <div className='m-5'>
-                    <h3 className='text-white'>Recommended products</h3>
+                <div className='m-5 font-thin'>
+                    <h3 className='text-white mb-5'>Recommended products</h3>
+                    <div className='grid grid-cols-2 gap-14 h-[90%] overflow-auto scrollbar-thin scrollbar-thumb-gray-900 p-3'>
+                        <div>
+                            <img src={lamer} width='180px' className='rounded-3xl' />
+                            <div className='mt-2'>
+                                <h2 className='text-center text-white'>La Mer Cream</h2>
+                                <div className='flex justify-center'>
+                                    <p className='text-center text-white mr-2'>$43</p><s className='text-white'>$69</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src={santal} width='180px' className='rounded-3xl' />
+                            <div className='mt-2'>
+                                <h2 className='text-center text-white'>Santal 33</h2>
+                                <div className='flex justify-center'>
+                                    <p className='text-center text-white mr-2'>$43</p><s className='text-white'>$69</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src={arami} width='180px' className='rounded-3xl' />
+                            <div className='mt-2'>
+                                <h2 className='text-center text-white'>Aramis</h2>
+                                <div className='flex justify-center'>
+                                    <p className='text-center text-white mr-2'>$43</p><s className='text-white'>$69</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src={origins} width='180px' className='rounded-3xl' />
+                            <div className='mt-2'>
+                                <h2 className='text-center text-white'>Origin</h2>
+                                <div className='flex justify-center'>
+                                    <p className='text-center text-white mr-2'>$43</p><s className='text-white'>$69</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src={jomalone} width='180px' className='rounded-3xl' />
+                            <div className='mt-2'>
+                                <h2 className='text-center text-white'>Jomalon</h2>
+                                <div className='flex justify-center'>
+                                    <p className='text-center text-white mr-2'>$43</p><s className='text-white'>$69</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src={smashbox} width='180px' className='rounded-3xl' />
+                            <div className='mt-2'>
+                                <h2 className='text-center text-white'>Smashbox</h2>
+                                <div className='flex justify-center'>
+                                    <p className='text-center text-white mr-2'>$43</p><s className='text-white'>$69</s>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
                 
             </section>
